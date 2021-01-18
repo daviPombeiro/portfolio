@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/icon.png">
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="./fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+    <nav>
+        <button class="cera dropbtn" onclick="dropdown()"><img src="media/menu-icon.png" height="20px"></button>
+        <div class="drop-content" id="dropContent">
+            <a href="#home" class="navlink" onclick="dropdown()">home</a>
+            <a href="#about" class="navlink" onclick="dropdown()">about</a>
+            <a href="#knowledge" class="navlink" onclick="dropdown()">knowledge</a>
+            <a href="#work" class="navlink" onclick="dropdown()">projects</a>
+            <a href="#contact" class="navlink" onclick="dropdown()">contact</a>
+        </div>
+    </nav>
+    <div id="home" class="background-1">
+        <div>
+            <h1>DBP</h1>
+            <h6>DAVI BARRETO POMBEIRO</h6>
+        </div>
+    </div>
+    <div id="about" class="background-2">
+        <div class="block-line block-img">
+            <img src="./media/face.jpg" width="350px">
+        </div>
+        <div class="block-line">
+            <div>
+                <h1>About</h1>
+                <hr/>
+                <h2>Hello, I'm Davi Barreto Pombeiro. </h2>
+                <h2 style="margin-top: -25px;"> Nice to meet you!</h2>
+                <p>I'm a brazilian fullstack programmer, currently studying information systems on PUCPR (Pontifícia Universidade Católica do Paraná). I've been developing some projects on the last 3 years that range from personal to startup projects. Some of them can be seen on this website. I hope you enjoy and enter in contact!</p>
+                <p style="margin-top: 15px;">native portuguese, advanced english</p>
+            </div>
+        </div>
+    </div>
+    <div id="knowledge" class="background-2">
+        <h1>Knowledge</h1>
+        <hr/>
+        <div id="knowledgeContent">
+            <div id="frontend">
+                <h2>Front-End</h2>
+                <hr/>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>ReactJS</p>
+                <p>JQuery</p>
+                <p>WordPress</p>
+            </div>
+            <div id="backend">
+                <h2>Back-End</h2>
+                <hr/>
+                <p>PHP</p>
+                <p>NodeJS</p>
+                <p>Python</p>
+                <p>Java</p>
+                <p>Laravel</p>
+                <p>ExpressJS</p>
+                <p>MySQL</p>
+                <p>MongoDB</p>
+            </div>
+            <div id="mobile">
+                <h2>Mobile</h2>
+                <hr/>
+                <p>Android SDK</p>
+                <p>React Native</p>
+                <p>Swift</p>
+            </div>
+            <div id="devTool">
+                <h2>Dev Tools</h2>
+                <hr/>
+                <p>VSCode</p>
+                <p>NetBeans</p>
+                <p>Git Bash</p>
+                <p>Github</p>
+            </div>
+        </div>
+    </div>
+    <div id="work" class="background-3" style="height: fit-content;">
+        <h1>Projects I've Worked</h1>
+        <hr />
+        <div id="projectContent">
+           <a target="_blank" href="http://mosaicodeamor.com.br/">
+                <img class="projectImage" src="media/projects/mosaicoDeAmor.png" />
+                <div class="projectText">
+                    <h2>Mosaico de Amor</h2>
+                    <hr style="width: 10vw;" />
+                    <p>A blog for a NGO focused on helping a poor neighborhood named Tancredo Neves on Salvador, Bahia.</p>
+                </div>
+            </a>
+            <a target="_blank" href="https://wipcidadao.com.br/">
+                <img class="projectImage" src="media/projects/wipCidadao.png" />
+                <div class="projectText">
+                    <h2>Wip Cidadão</h2>
+                    <hr style="width: 10vw;" />
+                    <p>A platform to report infrastructure problems of your city in a fast and simple way.</p>
+                </div>
+            </a>
+            <a target="_blank" href="http://davipombeiro.dev.br/projects/FNCStoreConcept/">
+                <img class="projectImage" src="media/projects/fncStore.png" />
+                <div class="projectText">
+                    <h2>FNC Store Concept</h2>
+                    <hr style="width: 10vw;" />
+                    <p>Fan made leaning page for esports team Fnatic, focusing on their jersey. <br/> Concept by: behance.net/lucianoleal</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="contact" class="background-3">
+        <div>
+            <a target="_blank" href="https://www.linkedin.com/in/davi-barreto-pombeiro/">
+                <img src="./media/contact/linkedin.png" width="50px" />
+            </a>
+            <a target="_blank" href="https://github.com/daviPombeiro">
+                <img src="./media/contact/github.png" width="50px" />
+            </a>
+            <a target="_blank" href="mailto:davi.barreto.pombeiro@gmail.com, contato@davipombeiro.dev.br">
+                <img src="./media/contact/email.png" width="50px" />
+            </a>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

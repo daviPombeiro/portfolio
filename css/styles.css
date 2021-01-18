@@ -1,0 +1,438 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #353535;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.background-1 {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('/media/background.jpg');
+    background-size: cover;
+}
+
+.background-2 {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.background-3 {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+
+    background: #26385c;
+}
+
+h1 {
+    color: black;
+    font-family: 'TypoGraphica';
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 5px;
+
+    margin: 0;
+}
+
+h2 {
+    color: black;
+    font-family: 'TypoGraphica';
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    padding: 10px 0 10px 0;
+
+    z-index: 999;
+
+    background-image: url('/media/background.jpg');
+    background-size: cover;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'TypoGraphica';
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    margin: 0 15px 0 15px;
+}
+
+.dropbtn {
+    border-width: 0;
+    color: white;
+    visibility: hidden;
+    position: absolute;
+    font-family: 'TypoGraphica';
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    background: none;
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+}
+
+#dropContent a {
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        background: #18243b;
+    }
+    .dropbtn {
+        border-width: 0;
+        color: white;
+        visibility: visible;
+        position: relative;
+    }
+
+    .drop-content {
+        visibility: hidden;
+        position: absolute;
+        text-align: center;
+    }
+
+    .navlink {
+        display: block;
+        padding: 5px 0 5px 0;
+    }
+}
+
+#home h1 {
+    color: white;
+    font-family: 'TypoGraphica';
+    font-size: 150px;
+    font-weight: normal;
+    letter-spacing: 5px;
+
+    margin: 0;
+}
+
+#home h6 {
+    color: white;
+    font-family: 'TypoGraphica';
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 5px;
+
+    margin: 0;
+    margin-top: -30px;
+}
+
+#home div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+#about {
+    display: flex;
+}
+
+#about hr {
+    margin-left: 0;
+    width: 500px;
+    border-top: 2px solid black;
+}
+
+#about img {
+    border-radius: 1000px;
+    vertical-align: middle;
+}
+
+#about p {
+    color: black;
+    font-weight: normal;
+    font-size: 19px;
+    letter-spacing: 2px;
+
+    text-align: justify;
+    text-justify: inter-word;
+
+    margin: 0;
+}
+
+.block-line {
+    flex: 1;
+    display:flex;
+    align-items: center;
+}
+
+.block-line div {
+    margin-right: 60px;
+}
+
+.block-img {
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #about {
+        display: block;
+    }
+
+    #about hr {
+        width: 80vw;
+    }
+
+    #about img {
+        border-radius: 1000px;
+        vertical-align: middle;
+        width: 75vw;
+
+        margin: 65px 0 20px 0;
+    }
+
+    .block-line div {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin: 0 0 20px 0;
+    }
+}
+
+#knowledge {
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+#knowledge hr {
+    width: 45vw;
+    border-top: 2px solid black;
+
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#knowledge h3 {
+    color: black;
+    font-family: 'TypoGraphica';
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 3px;
+
+    margin: 0;
+}
+
+#knowledgeContent {
+    display: flex;
+
+    width: 100vw;
+}
+
+#knowledgeContent div {
+    flex: 1;
+    align-items: center;
+
+    margin: 10px 10px 10px 10px;
+    padding: 20px 10px 30px 10px;
+    
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#knowledge div hr {
+    width: 5vw;
+    border-top: 2px solid black;
+    margin-bottom: 20px;
+}
+
+#knowledge div p {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    #knowledgeContent {
+        display: block;
+    }
+
+    hr {
+        width: 80vw;
+    }
+
+    #knowledgeContent div {
+        width: 90vw;
+        margin: 10px 0 10px 10px;
+    }
+}
+
+#experience {
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+#experience hr {
+    width: 45vw;
+    border-top: 2px solid white;
+
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#experience h1 {
+    color: white;
+}
+
+
+#work {
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+#work hr {
+    width: 45vw;
+    border-top: 2px solid white;
+
+    padding: 0;
+}
+
+#work h1 {
+    color: white;
+}
+
+#work h2 {
+    color: white;
+}
+
+#work p {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+#projectContent {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+#projectContent a {
+    flex: 1;
+    align-items: center;
+
+    max-width: 30vw;
+    height: 40vh;
+
+    margin: 10px 5px 10px 5px;
+    
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+
+.projectImage {
+    display: block;
+    z-index: 5;
+    position: absolute;
+
+    width: 30vw;
+    height: 40vh;
+}
+
+.projectText {
+    position: relative;
+    display: block;
+    z-index: 3;
+    padding: 20px 10px 10px 20px;
+}
+
+#projectContent a:hover > .projectImage {
+    filter: brightness(20%);
+    z-index: 0;
+    
+}
+
+#projectContent img {
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    #projectContent {
+        display: grid;
+        margin-left: 10px;
+    }
+
+    hr {
+        width: 80vw;
+    }
+
+    #knowledgeContent a {
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .projectImage {
+        filter: brightness(20%);
+        z-index: 0;
+        display: block;
+        position: absolute;
+    
+        width: 90vw;
+    }
+
+    .projectText {
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 90vw;
+
+        padding: 20px 0 0 0;
+    }
+}
+
+#contact {
+    text-align: center;
+
+    min-height: fit-content;
+    height: 20vh;
+
+    line-height: 20vh;
+}
+
+#contact div {
+    vertical-align: middle;
+}
+
+#contact div a {
+    margin-right: 30px;
+}
